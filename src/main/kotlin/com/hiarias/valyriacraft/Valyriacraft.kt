@@ -1,13 +1,22 @@
 package com.hiarias.valyriacraft
 
-import net.fabricmc.api.ModInitializer
+import net.minecraft.util.Identifier
+import net.minecraft.util.registry.Registry
 import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 
-object Valyriacraft : ModInitializer {
-    const val MOD_ID = "valyriacraft"
-    val logger = LogManager.getLogger(MOD_ID)
+const val MOD_ID = "valyriacraft"
 
-    override fun onInitialize() {
-        logger.info("Hello, World!")
+val LOGGER: Logger = LogManager.getLogger(MOD_ID)
+
+@Suppress("unused")
+fun init() {
+    LOGGER.info("Hello, World!")
+    registerItem()
+}
+
+private fun registerItem() {
+    ITEMS.forEach { (id, item) ->
+        Registry.register(Registry.ITEM, Identifier(MOD_ID, id), item)
     }
 }

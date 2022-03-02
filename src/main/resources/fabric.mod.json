@@ -16,10 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      {
-        "adapter": "kotlin",
-        "value": "com.hiarias.valyriacraft.Valyriacraft"
-      }
+      "com.hiarias.valyriacraft.ValyriacraftKt::init"
     ]
   },
   "mixins": [
