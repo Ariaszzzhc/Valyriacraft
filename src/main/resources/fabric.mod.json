@@ -12,7 +12,7 @@
     "issues": "https://github.com/Ariaszzzhc/Valyriacraft/issues",
     "sources": "https://github.com/Ariaszzzhc/Valyriacraft"
   },
-  "license": "GNU Lesser General Public License version 3 (LGPLv3)",
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)",
   "environment": "*",
   "entrypoints": {
     "main": [
